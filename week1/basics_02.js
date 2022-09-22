@@ -97,3 +97,22 @@ z = '3';
 v = x !== z;
 v = x === z;
 console.log(v);
+
+// Built-in Math class
+const PI = Math.PI;
+console.log(PI);
+z = 12.6;
+v = Math.ceil(z);
+v = Math.floor(z);
+v = Math.round(z);
+z = 12.4;
+v = Math.round(z);
+v = Math.random(); // Random value between 0 ... 1
+v = Math.ceil(Math.random() * 100);
+console.log(v);
+
+// Built-in Date class
+let date = Date.now();
+date = new Date();
+const clock = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+console.log(clock);
