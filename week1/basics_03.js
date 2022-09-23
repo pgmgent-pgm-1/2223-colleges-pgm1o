@@ -62,7 +62,7 @@ if (false) {
 } else {
   console.log('It\'s NOT true');
 }
-let isALady = true;
+let isALady = false;
 if (isALady) {
   console.log('You are a Lady.');
 } else {
@@ -77,4 +77,16 @@ if (gender == 0) {
   console.log('You are a female!');
 } else {
   console.log('Gender is not specified');
+}
+
+// Ternary operator
+let msg3 = (isALady) ? 'You are a Lady.' : 'You are a Boy.';
+console.log(msg3);
+
+// switch / case
+switch (gender) {
+  case 0: console.log('Gender is not known!'); break;
+  case 1: console.log('You are a male!'); break;
+  case 2: console.log('You are a female!'); break;
+  case 9: default: console.log('Gender is not specified!'); break;
 }
