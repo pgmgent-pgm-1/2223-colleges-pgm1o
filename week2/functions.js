@@ -74,3 +74,47 @@ const person = {
 console.log(`Your salary is ${person.salary}`);
 doubleSalaryForPerson(person);
 console.log(`Your salary is ${person.salary}`);
+
+function sr(v) {
+  return v * v;
+}
+
+// Anonieme functie = function expressions
+const sq = function(v) {
+  return v * v;
+};
+console.log(sq(3));
+
+// Arrow functions
+const sa = (v) => {
+  return v * v;
+};
+console.log(sa(3));
+
+// Addition of two values with arrow functions
+const add = (a, b) => {
+  return a + b;
+}
+let v = add(6, 3);
+console.log(v);
+
+const addVeryShort = (a, b) => a + b;
+v = add(6, 3);
+console.log(v);
+
+// Rest parameter in functions
+function multiply(factor, ...args) {
+  let result = 0;
+  for (let i = 0; i < args.length; i++) {
+    result += args[i] * factor;
+  }
+  return result;
+}
+console.log(multiply(3, 1, 2, 3, 4, 5, 6));
+
+// IIFE
+(() => {
+  var pol = 'pol';
+  console.log('Started!');
+})();
+console.log(pol);
