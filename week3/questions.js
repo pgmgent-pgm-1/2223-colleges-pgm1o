@@ -25,3 +25,28 @@ for (let k = 128512; k < 129000; k++) {
   output += String.fromCodePoint(k);
 }
 console.log(output);
+
+// Array of objects
+const lecturer = {
+  courses: [
+    {
+      name: 'Programming 1',
+      code: 'PGM-1',
+      lecturers: [
+        'Philippe De Pauw - Waterschoot',
+        'Michael Vanderpoorten',
+        'Jannes Lambrecht',
+      ],
+    },
+    {
+      name: 'Web Design',
+      code: 'WEBDES',
+      lecturers: [
+        'Wachem Huyge',
+        'Evelien Rutsaert',
+        'Mathieu Spillebeen',
+      ],
+    }
+  ]
+}
+console.log(lecturer);
