@@ -58,13 +58,13 @@ const programmeLines = [
   },
 ];
 
-function printTextInChalkColor(text, color) {
+function printTextInChalkColor(text, color, isBackground = true) {
   switch (color) {
-    case 'blue': return chalk.bgBlue(text);
-    case 'orange': return chalk.bgYellow(text);
-    case 'green': return chalk.bgGreen(text);
-    case 'purple': return chalk.bgMagenta(text);
-    case 'red': return chalk.bgRed(text);
+    case 'blue': return isBackground ? chalk.bgBlue(text) : chalk.blue(text);
+    case 'orange': return isBackground ? chalk.bgYellow(text) : chalk.yellow(text);
+    case 'green': return isBackground ? chalk.bgGreen(text) : chalk.green(text);
+    case 'purple': return isBackground ? chalk.bgMagenta(text) : chalk.magenta(text);
+    case 'red': return isBackground ? chalk.bgRed(text) : chalk.red(text);
   }
 }
 
@@ -76,7 +76,7 @@ let output = `
 const transformedProgrammeLines = programmeLines.map((programmeLine) => {
   return `${programmeLine.name} (${programmeLine.lecturer.initials})`;
 });
-output += programmeLines.map((programmeLine, index) => `${printTextInChalkColor(' ', programmeLine.color)}${programmeLine.name} (${programmeLine.lecturer.initials})${index < programmeLines.length - 1 ? '\n------------------------------------------------------------------------' : ''}`).join('\n');
+output += programmeLines.map((programmeLine, index) => `${printTextInChalkColor(' ', programmeLine.color)} ${printTextInChalkColor(programmeLine.name, programmeLine.color, false)} (${programmeLine.lecturer.initials})${index < programmeLines.length - 1 ? '\n------------------------------------------------------------------------' : ''}`).join('\n');
 output += `
 ========================================================================
 `;
