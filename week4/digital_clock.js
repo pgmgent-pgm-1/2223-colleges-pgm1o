@@ -3,7 +3,7 @@ Programming 1: Essentials
 Week: 4
 Date: 13-10-2022
 =========================
-Digital Clock
+Digital Clock with millisends
 */
 const tick = () => {
   const date = new Date();
