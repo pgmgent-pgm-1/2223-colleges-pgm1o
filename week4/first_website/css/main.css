@@ -10,6 +10,11 @@
   font-weight: 700;
   font-size: 4rem;
 } */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -20,10 +25,11 @@
   width: 100vw;
 }
 .bit {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  /* border-radius: 50%; */
 
   background: hsl(349, 100%, 55%);
+  border: 2px solid #000000;
   text-indent: -999em;
 }

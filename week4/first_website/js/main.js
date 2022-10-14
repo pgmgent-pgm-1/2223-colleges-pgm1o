@@ -23,7 +23,10 @@
 
 const $container = document.querySelector('.container');
 let tempStr = '';
-for (let i=0; i < 360; i++) {
-  tempStr += `<div class="bit" style="background:hsl(${i},50%,50%)">BIT</div>`;
+for (let i=0; i < 3600; i++) {
+  tempStr += `<div class="bit" style="background:hsl(${i/10},50%,50%);transform: rotate(${i/10}deg)">BIT</div>`;
 }
 $container.innerHTML = tempStr;
+$container.querySelectorAll('.bit').forEach($elem => {
+  $elem.addEventListener('mousemove', (ev) => ev.target.style.transform = `rotate(0deg)`);
+})
