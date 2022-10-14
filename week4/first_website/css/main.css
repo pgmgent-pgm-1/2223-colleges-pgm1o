@@ -1,0 +1,29 @@
+/* .container {
+  width: 500px;
+  height: 500px;
+
+  background: rgba(16, 16, 16, 1);
+  color: hsl(0, 0%, 70%);
+  text-align: center;
+  line-height: 500px;
+
+  font-weight: 700;
+  font-size: 4rem;
+} */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+}
+.bit {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+
+  background: hsl(349, 100%, 55%);
+  text-indent: -999em;
+}
