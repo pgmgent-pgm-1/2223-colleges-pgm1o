@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: hsl(160, 100%, 75%);
+
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel {
+  width: 100%;
+  height: 100%;
+
+  border: 36px solid hsl(160, 97%, 37%);
+}
