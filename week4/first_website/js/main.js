@@ -29,4 +29,4 @@ for (let i=0; i < 3600; i++) {
 $container.innerHTML = tempStr;
 $container.querySelectorAll('.bit').forEach($elem => {
   $elem.addEventListener('mousemove', (ev) => ev.target.style.transform = `rotate(0deg)`);
-})
+});
