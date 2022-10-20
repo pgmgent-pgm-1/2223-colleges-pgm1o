@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.waves {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.wave {
+  background-color: hsl(360, 100%, 50%);
+  width: 24px;
+  height: 24px;
+  margin:2px;
+
+  text-indent: -999em;
+
+  transition: all 268ms ease-in-out;
+}
+
+.wave:hover {
+  transform: scale(3) rotate(360deg) !important;
+}
+
+.todos > li.important {
+  color: rgba(255, 0, 0, 1);
+}
