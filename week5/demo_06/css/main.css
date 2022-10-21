@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, .key__container {
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.key {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  font-size: 64px;
+}

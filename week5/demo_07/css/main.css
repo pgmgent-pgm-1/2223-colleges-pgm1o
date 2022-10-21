@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.offcanvas__nav {
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 80%);
+
+  transform: translateX(-100vw) translateY(-100vh);
+  transition: all 486ms ease-out 0s;
+}
+
+.offcanvas__nav.isopen {
+  transform: translateX(0) translateY(0);
+}
